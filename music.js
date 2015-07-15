@@ -12,6 +12,15 @@ var addSongBottom = songs.push("Hold Back the River > by James Bay on the album 
 var addSongTop = songs.unshift("Just One Drink > by Jack White on the album Lazaretto");
 
 
+
+var addSong = prompt("Pick a song");
+	if (addSong===""); {
+var addArtist = prompt("Who sings it?")
+	}
+	if (addSong===""); {
+var addAlbum = prompt("On what album?")
+	songs.push(addSong + " &#8208 by " + addArtist + " on the album " + addAlbum);
+}
 for (var i = 0; i < songs.length; i++) {
 	var list = songs[i];
 

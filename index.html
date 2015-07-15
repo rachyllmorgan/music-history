@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Nashville Software School</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+            <!-- ********** Navigation Bar ************** --> 
    <nav>
-    <li>View Music</li>
+    <li><a href="#">View Music</a></li>
     <li><a href="#">Add Music</a></li>
     <li><a href="#">Profile</a></li>
    </nav>
+
+            <!-- ********** Main Content Wrap ************** -->
   <div id="wrapper">
+
+            <!-- ************* Left Column ************* --> 
+
     <fieldset class="column-left ugly-blue">
+      
       <div class="pad-top pad-bottom">
         <label for="song-length">Song Length</label><br>
         <input type="range" name="song-length" min="1:30" max="6:00" step="0.01" value="#">
       </div>
+      
       <div class="pad-bottom">
         <label for="artist-name">Artist</label><br>
-        <select id="artist-name" name="type" class="menu"><br>
+        <select id="artist-name" name="type"><br>
           <option>Options</option>
           <option>James Bay</option>
           <option>Creedence Clearwater Revival</option>
@@ -29,9 +39,10 @@
           <option>Jack White</option>
         </select>
       </div>
+      
       <div class="pad-bottom">
         <label for="album-name">Album</label><br>
-        <select id="album-name" name="type" class="menu">
+        <select id="album-name" name="type">
           <option>Options</option>
           <option>Green River</option>
           <option>Ceremonials</option>
@@ -40,28 +51,37 @@
           <option>El Camino</option>
         </select>
       </div> 
+      <!-- ************* Checkboxes  ********************** -->
       <div>
         <h4>Genre:</h4>
-        <ul class="check-wrapper ">
+        <ul class="check-wrapper">
+          
           <div class="float-left">
-            <li><input type="checkbox" name="rock" value="value1" /><label for="rock">Rock</label></li>
-            <li><input type="checkbox" name="pop" value="value1" /><label for="pop">Pop</label></li>
-            <li><input type="checkbox" name="blues" value="value1" /><label for="blues">Blues</label></li>
+            <li><input type="checkbox" name="rock" value="value1" class="checked"><label for="rock">Rock</label></li>
+            <li><input type="checkbox" name="pop" value="value1"><label for="pop">Pop</label></li>
+            <li><input type="checkbox" name="blues" value="value1"><label for="blues">Blues</label></li>
           </div>
-          <div class=" float-right">
-            <li><input type="checkbox" name="classical" value="value1" /><label for="classical">Classical</label></li>
-            <li><input type="checkbox" name="jazz" value="value1" /><label for="jazz">Jazz</label></li>
-            <li><input type="checkbox" name="hiphop" value="value1" /><label for="hiphop">Hip Hop</label></li>
+          
+          <div class="float-right">
+            <li><input type="checkbox" name="classical" value="value1"><label for="classical">Classical</label></li>
+            <li><input type="checkbox" name="jazz" value="value1"><label for="jazz">Jazz</label></li>
+            <li><input type="checkbox" name="hiphop" value="value1"><label for="hiphop">Hip Hop</label></li>
           </div>
+        
         </ul>
       </div>
+     
       <div class="pad-bottom">
         <input type="submit" value="Filter" class="button"></input>
       </div>
+    
     </fieldset>
+   
    <div class="table-box pad-bottom">
       <section id = "songlist" class="list_mod">
-      <!--  <table id="songlist">
+
+      <!-- ************Original Song Info ***********
+      <table id="songlist">
       <h3>Hold Back the River</h3>
         <tr class="flex">
           <td>James Bay |</td>
@@ -101,10 +121,14 @@
           <td>Rock</td>
         </tr>
       </table> -->
+
       </section>
      </div>
+    
     </div>
     </div>
+    
     <script src="music.js"></script>
+
   </body>        
 </html>
