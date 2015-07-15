@@ -1,17 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Nashville Software School</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-  <body>
+<body>
    <nav>
     <li>View Music</li>
     <li><a href="#">Add Music</a></li>
     <li><a href="#">Profile</a></li>
-  </nav>
+   </nav>
   <div id="wrapper">
     <fieldset class="column-left ugly-blue">
       <div class="pad-top pad-bottom">
@@ -59,10 +59,10 @@
         <input type="submit" value="Filter" class="button"></input>
       </div>
     </fieldset>
-   </div> 
    <div class="table-box pad-bottom">
-      <table>
-        <h3>Hold Back the River</h3>
+      <section id = "songlist" class="list_mod">
+      <!--  <table id="songlist">
+      <h3>Hold Back the River</h3>
         <tr class="flex">
           <td>James Bay |</td>
           <td>Chaos and the Calm |</td>
@@ -99,9 +99,12 @@
           <td>Jack White |</td>
           <td>Lazaretto |</td>
           <td>Rock</td>
-        </tr> 
-      </table>
+        </tr>
+      </table> -->
+      </section>
      </div>
-    </div>        
+    </div>
+    </div>
+    <script src="music.js"></script>
   </body>        
 </html>
