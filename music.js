@@ -31,12 +31,13 @@ $(document).ready(function(){
 		}).done(function(data) {
 				console.log(data.songs);
 	for (var i = 0; i <= data.songs; i++);
-			var splitArr = data.songs;
-			var oneSong = splitArr.join(" ");
-			$("#songlist").html(JSON.stringify(
-				"<div>" + oneSong[i] + "</div>"));
+		$("#songlist").append(JSON.stringify(data.songs));
+//			var splitArr = data.songs;
+//			var oneSong = splitArr.join(" ");
+//			$("#songlist").html(JSON.stringify(
+//				"<div>" + oneSong[i] + "</div>"));
 		});
-			
+//			
 $(":button").click(function(){
 			$.ajax({
 				url: "music2.json",
