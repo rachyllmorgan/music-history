@@ -97,21 +97,26 @@ ul li {
 }
 
 .list_mod {
-  line-height: 40px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
+button {
+	
+
+/******Music History 103 *******/
+/*
 .list_mod:nth-of-type(2n+0) {
-  background-color: #FFF5EE;
+  background-color: red;
 }
 
 .list_mod:nth-of-type(2n+1) {
-  background-color:  #F5FFFA;
+  background-color:  green;
 }
 
 .list_mod :first-child {
   font-weight: bold;
 }
+*/
 
 /********* Old CSS for Original Songs Added **************
 
