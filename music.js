@@ -24,26 +24,41 @@
 // list_of_songs.innerHTML += "<div class='list_mod'>" + song_mod + "</div>" + "<br>";
 // }
 
+//$(document).ready(function(){	
+//	
+//		$.ajax({
+//				url: "music.json",
+//		}).done(function(data) {
+
+//});
+
+
 $(document).ready(function(){	
 	
 		$.ajax({
 				url: "music.json",
 		}).done(function(data) {
-				console.log(data.songs);
-	for (var i = 0; i <= data.songs; i++);
-		$("#songlist").append(JSON.stringify(data.songs));
-//			var splitArr = data.songs;
-//			var oneSong = splitArr.join(" ");
-//			$("#songlist").html(JSON.stringify(
-//				"<div>" + oneSong[i] + "</div>"));
-		});
-//			
-$(":button").click(function(){
+			var table = '';
+		for(var i =0; i <= data.songs.length; i++) {
+			console.log(data.songs[i].name);
+			table += "<table><tr><h3>"+data.songs[i].name+"</h3></tr>"+"<tr>"+data.songs[i].artist+"</tr></br>"+"<tr>"+data.songs[i].album+"</tr></table>";
+			$('#table-body').html(table);
+		}
+						})
+		$(".more").click(function(){
 			$.ajax({
 				url: "music2.json",
-		}).done(function(data) {
-				console.log(data);	$("#songlist").append(JSON.stringify(data));
-   })
- })
+			}).done(function(data) {
+			var table = '';
+		for(var i =0; i <= data.songs.length; i++) {
+			console.log(data.songs[i].name);
+			table += "<table><tr><h3>"+data.songs[i].name+"</h3></tr>"+"<tr>"+data.songs[i].artist+"</tr></br>"+"<tr>"+data.songs[i].album+"</tr></table>";
+			$(".remove").click(function() {
+				$("tr").remove("<tr>");
+			})
+			$('#table-body').html(table);
+		}
+						})
+		})
+		
 });
-
