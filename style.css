@@ -27,8 +27,6 @@ nav > li {
   font-family: Arial, serif;
   display: inline-block;
   flex-grow: 1;
-  /** flex-basis: 40px 100%; **/
-  /** float: left;  **/
 }
 
 .ugly-blue {
@@ -48,8 +46,6 @@ nav > li {
 
 .check-wrapper {
   display: flex;
-  /**overflow: hidden;
-  width: 120px; **/
 }
 
 h4 {
@@ -64,16 +60,12 @@ ul li {
 
 .float-left {
   flex-grow: 1;
-  /** width: 60px;
-  float: left; **/
+
   margin-left: -30px; 
 }
 
 .float-right {
   flex-grow: 1;
-  /** width: 80px;
-  float: right;
-  margin-left: -30px; **/
 }
 
 /*********** Filter Button *************/
@@ -90,53 +82,9 @@ ul li {
   border: 1px solid black;
   background-color: #FEFAC0;
   flex-grow: 5;
- /** width: 65%;
-  display: inline;
-  float: right; **/
   padding-left: 25px;
 }
 
 .list_mod {
   margin-top: 15px;
 }
-
-/******Music History 103 *******/
-/*
-.list_mod:nth-of-type(2n+0) {
-  background-color: red;
-}
-
-.list_mod:nth-of-type(2n+1) {
-  background-color:  green;
-}
-
-.list_mod :first-child {
-  font-weight: bold;
-}
-*/
-
-/********* Old CSS for Original Songs Added **************
-
-table {
-  padding-bottom: 10px;
-}
-
-h3 {
-  color: #785616;
-  font-size: 23px;
-  font-weight: 200;
-  padding: auto;
-}
-
-div.table-box > table {
-  height: 100%;
-  table-layout: auto;
-  border-collapse: collapse;
-} 
-
-td {
-  font-size: 14px;
-  font-weight: 100;
-  padding: 0 7px 0 0;
-  display: inline-block;
-} **/
